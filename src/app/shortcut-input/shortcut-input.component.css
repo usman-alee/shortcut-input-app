@@ -1,0 +1,24 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shortcut-input {
+  display: inline-block;
+  padding: 40px 120px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 32px;
+}
+
+.shortcut-input.focused {
+  border-color: blue;
+}
+
+.shortcut-input span {
+  white-space: nowrap;
+}

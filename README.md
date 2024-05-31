@@ -1,27 +1,60 @@
-# TestAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+# Shortcut Input Component
 
-## Development server
+This is a standalone Angular component for capturing and validating keyboard shortcuts. It is designed to be reusable and easily integrable into any Angular application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Shortcut Detection**: Captures key combinations and validates them.
+- **Custom Modifiers**: Allows customization of modifier keys.
+- **Control Value Accessor**: Integrates seamlessly with Angular forms.
+- **Event Emission**: Emits valid shortcuts through `ngModelChange`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Ensure you have the following installed:
 
-## Running unit tests
+- [Node.js](https://nodejs.org/) (v12 or later)
+- [Angular CLI](https://angular.io/cli) (v11 or later)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. Clone the repository:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
 
-## Further help
+2. Install the dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm install
+```
+
+### Running the Application
+
+1. Start the development server:
+
+```bash
+ng serve
+```
+
+2. Open your browser and navigate to \`http://localhost:4200\`. You should see the \`ShortcutInputComponent\` ready for use.
+
+## Details
+
+This component is designed to showcase the following:
+
+- **Component Design**: Demonstrates the creation of a standalone, reusable Angular component.
+- **Event Handling**: Shows how to handle keyboard events in Angular.
+- **Reactive Forms Integration**: Implements Control Value Accessor for seamless form integration.
+- **Code Readability**: Emphasizes clean, readable code with appropriate comments and method names.
+
+### Key Points
+
+- **Focus and Blur Handling**: The component handles focus and blur events to manage its state.
+- **Keydown and Keyup Handling**: It captures key combinations and validates them against a predefined set of shortcuts.
+- **Validation Logic**: Contains logic to ensure only valid shortcuts are emitted and used.
